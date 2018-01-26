@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+        <link rel="stylesheet" type="text/css" href="./css/interface.css"/>
+        <title>Thommy's Weird Game</title>
+    </head>
+    <body>
+        <div id="Resources">
+            Meat: <span id="meatHolder">0</span><br/>
+            Wood: <span id="woodHolder">0</span><br/>
+            Rock: <span id="rockHolder">0</span><br/>
+            Iron: <span id="ironHolder">0</span><!--br/>
+            Gold: <span id="goldHolder">0</span-->
+        </div>
+        <div id="buttonHolder">
+            <button onclick="huntMeat(1)">Hunt (+1 Meat)</button>
+            <button onclick="chopWood(1)">Chop (+1 Wood)</button>
+            <button onclick="mineRock(1)">Mine (+1 Rock)</button>
+            <button onclick="mineIron(1)">Mine (+1 Iron)</button>
+        </div>
+        <div id="Hunters">
+            Hunters: <span id="hunterHolder">0</span><br/>
+            It costs <strong><span id="hunterCost">10</span> meat</strong> to hire a hunter.<br/>
+            <button onclick="hireHunter()">Hire hunter</button>
+        </div>
+        <div id="Woodcutters">
+            Woodcutters: <span id="cutterHolder">0</span><br/>
+            It costs <strong><span id="cutterCost">25</span> meat</strong> to hire a woodcutter.<br/>
+            <button onclick="hireCutter()">Hire woodcutter</button>
+        </div>
+        <div id="Miners">
+            Miners: <span id="minerHolder">0</span><br/>
+            It costs <strong><span id="minerCost">40</span> meat</strong> to hire a miner.<br/>
+            <button onclick="hireMiner()">Hire miner</button>
+        </div>
+
+
+        <button onclick="save()">Save Game</button>
+        <button onclick="load()">Load Game</button>
+        <script type="text/javascript" src="./scripts/main.js"></script>
+    </body>
+</html>
